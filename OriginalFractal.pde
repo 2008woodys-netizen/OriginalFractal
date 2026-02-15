@@ -20,13 +20,10 @@ class Point{
 Point todd;
 String sequence;
 
-void settings(){
-  size(500,500);
-}
-
 void setup(){
   todd = new Point(450,150);
   noLoop();
+  size(500,500);
   sequence = turnIntoDirections(paperFold(8));
 }
 
@@ -97,4 +94,5 @@ char endOf(String n){
   return n.charAt(n.length()-1);
 }
   
+
 
