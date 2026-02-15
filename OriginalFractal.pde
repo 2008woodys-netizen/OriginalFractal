@@ -1,7 +1,7 @@
 
-class Pointy{
+class Point{
   int myX, myY;
-  Pointy(int x, int y){
+  Point(int x, int y){
     myX = x;
     myY = y;
   }
@@ -17,12 +17,17 @@ class Pointy{
   void moveUp(){
     myY--;}
 }
-Pointy todd;
-String sequence = turnIntoDirections(paperFold(5));
+Point todd;
+String sequence;
+
+void settings(){
+  size(500,500);
+}
 
 void setup(){
-  todd = new Pointy(150,150);
-  size(500,500);
+  todd = new Point(450,150);
+  noLoop();
+  sequence = turnIntoDirections(paperFold(8));
 }
 
 void draw(){
@@ -92,5 +97,4 @@ char endOf(String n){
   return n.charAt(n.length()-1);
 }
   
-
 
