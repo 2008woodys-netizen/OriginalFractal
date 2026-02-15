@@ -22,10 +22,8 @@ String sequence = turnIntoDirections(paperFold(11));
 
 void setup(){
   todd = new Point(150,150);
-  println(paperFold(5));
   size(500,500);
   String sequence = turnIntoDirections(paperFold(5));
-  println(sequence);
 }
 
 void draw(){
@@ -95,3 +93,4 @@ char endOf(String n){
   return n.charAt(n.length()-1);
 }
   
+
