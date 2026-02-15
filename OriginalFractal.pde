@@ -6,7 +6,7 @@ class Point{
     myY = y;
   }
   void show(){
-    point(myX,myY);
+    ellipse(myX,myY,1,1);
   }
   void moveDown(){
     myY++;}
@@ -32,7 +32,7 @@ void draw(){
           todd.moveRight();
           todd.show();}
       if(sequence.charAt(i)=='L')
-        for(int j = 0; j<5; j++){
+        for(int j = 0; j<6; j++){
           todd.moveLeft();
           todd.show();}
       if(sequence.charAt(i)=='U')
@@ -92,5 +92,4 @@ char endOf(String n){
   return n.charAt(n.length()-1);
 }
   
-
 
