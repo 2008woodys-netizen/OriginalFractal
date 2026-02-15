@@ -6,7 +6,8 @@ class Point{
     myY = y;
   }
   void show(){
-    ellipse(myX,myY,1,1);
+    stroke(255);
+    ellipse(myX,myY,3,3);
   }
   void moveDown(){
     myY++;}
@@ -97,6 +98,7 @@ char endOf(String n){
   return n.charAt(n.length()-1);
 }
   
+
 
 
 
