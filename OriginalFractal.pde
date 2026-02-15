@@ -18,12 +18,11 @@ class Point{
     myY--;}
 }
 Point todd;
-String sequence = turnIntoDirections(paperFold(11));
+String sequence = turnIntoDirections(paperFold(5));
 
 void setup(){
   todd = new Point(150,150);
   size(500,500);
-  String sequence = turnIntoDirections(paperFold(5));
 }
 
 void draw(){
@@ -93,4 +92,5 @@ char endOf(String n){
   return n.charAt(n.length()-1);
 }
   
+
 
