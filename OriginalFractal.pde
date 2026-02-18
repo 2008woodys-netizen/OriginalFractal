@@ -99,3 +99,4 @@ public String reverseN(String s){
 char endOf(String n){
   return n.charAt(n.length()-1);
 }
+
