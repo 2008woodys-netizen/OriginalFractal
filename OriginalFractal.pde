@@ -21,17 +21,14 @@ class Point{
 Point todd;
 String sequence;
 
-void settings(){
-  size(500,500);
-}
-
 void setup(){
+  size(500,500);
   todd = new Point(450,150);
   noLoop();
   background(0);
   stroke(255);
   fill(255);
-  sequence = turnIntoDirections(paperFold(9));
+  //sequence = turnIntoDirections(paperFold(9));
 }
 
 void draw(){
@@ -101,3 +98,4 @@ public String reverseN(String s){
 char endOf(String n){
   return n.charAt(n.length()-1);
 }
+
