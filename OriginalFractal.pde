@@ -1,4 +1,5 @@
 
+
 class Point{
   int myX, myY;
   Point(int x, int y){
@@ -33,7 +34,8 @@ void setup(){
 }
 
 void draw(){
-    for(int i = 0; i<sequence.length(); i++){
+   /*
+      for(int i = 0; i<sequence.length(); i++){
       if(sequence.charAt(i)=='R')
         for(int j = 0; j<5; j++){
           todd.moveRight();
@@ -51,6 +53,8 @@ void draw(){
           todd.moveDown();
           todd.show();}
     }  
+    */
+    todd.show();
     ellipse(20,20,20,20);
     println(sequence);
 }      
@@ -99,4 +103,3 @@ public String reverseN(String s){
 char endOf(String n){
   return n.charAt(n.length()-1);
 }
-
