@@ -25,16 +25,13 @@ String sequence;
 void setup(){
   size(500,500);
   todd = new Point(450,150);
-  noLoop();
   background(0);
   stroke(255);
   fill(255);
-  //sequence = turnIntoDirections(paperFold(9));
-  sequence = "DLDLDLDLDLDL";
+  sequence = turnIntoDirections(paperFold(9));
 }
 
 void draw(){
-   /*
       for(int i = 0; i<sequence.length(); i++){
       if(sequence.charAt(i)=='R')
         for(int j = 0; j<5; j++){
@@ -53,13 +50,7 @@ void draw(){
           todd.moveDown();
           todd.show();}
     }  
-    */
-    todd.show();
-    for(int i = 0; i<15; i++)
-      todd.moveDown();
-    todd.show();
-    ellipse(20,20,20,20);
-    println(sequence);
+    
 }      
 
 String turnIntoDirections(String str){
