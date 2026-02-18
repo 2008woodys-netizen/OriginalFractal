@@ -29,10 +29,11 @@ void setup(){
   stroke(255);
   fill(255);
   //sequence = turnIntoDirections(paperFold(9));
+  sequence = "DLDLDLDLDLDL";
 }
 
 void draw(){
-    /*for(int i = 0; i<sequence.length(); i++){
+    for(int i = 0; i<sequence.length(); i++){
       if(sequence.charAt(i)=='R')
         for(int j = 0; j<5; j++){
           todd.moveRight();
@@ -50,8 +51,8 @@ void draw(){
           todd.moveDown();
           todd.show();}
     }  
-    */
     ellipse(20,20,20,20);
+    println(sequence);
 }      
 
 String turnIntoDirections(String str){
@@ -98,4 +99,3 @@ public String reverseN(String s){
 char endOf(String n){
   return n.charAt(n.length()-1);
 }
-
