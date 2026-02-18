@@ -29,10 +29,7 @@ void setup(){
   stroke(255);
   fill(255);
   sequence = turnIntoDirections(paperFold(9));
-}
-
-void draw(){
-      for(int i = 0; i<sequence.length(); i++){
+   for(int i = 0; i<sequence.length(); i++){
       if(sequence.charAt(i)=='R')
         for(int j = 0; j<5; j++){
           todd.moveRight();
@@ -50,8 +47,8 @@ void draw(){
           todd.moveDown();
           todd.show();}
     }  
-    
-}      
+}
+     
 
 String turnIntoDirections(String str){
   if(str.length()==2)
