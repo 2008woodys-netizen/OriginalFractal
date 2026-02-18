@@ -55,6 +55,9 @@ void draw(){
     }  
     */
     todd.show();
+    for(int i = 0; i<15; i++)
+      todd.moveDown();
+    todd.show();
     ellipse(20,20,20,20);
     println(sequence);
 }      
@@ -103,3 +106,4 @@ public String reverseN(String s){
 char endOf(String n){
   return n.charAt(n.length()-1);
 }
+
