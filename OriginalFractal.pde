@@ -28,7 +28,7 @@ void setup(){
   background(0);
   stroke(255);
   fill(255);
-  sequence = turnIntoDirections(paperFold(4));
+  sequence = turnIntoDirections(paperFold(2));
    for(int i = 0; i<sequence.length(); i++){
       if(sequence.charAt(i)=='R')
         for(int j = 0; j<5; j++){
@@ -94,5 +94,6 @@ public String reverseN(String s){
 char endOf(String n){
   return n.charAt(n.length()-1);
 }
+
 
 
